@@ -1,0 +1,349 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 25px 30px;
+}
+
+/* Form Section */
+section.form header {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+section.form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+section.form .field label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+section.form .field input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+section.form .field input:focus {
+  border-color: #007bff;
+}
+
+section.form .field i {
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  cursor: pointer;
+}
+
+section.form .field.button input {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+section.form .field.button input:hover {
+  background: #0056b3;
+}
+
+section.form .link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+section.form .link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+section.form .link a:hover {
+  text-decoration: underline;
+}
+
+/* Chat Area */
+.chat-area header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.chat-area header img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chat-area header .details span {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.chat-area header .details p {
+  font-size: 14px;
+  color: #999;
+}
+
+.chat-area .chat-box {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px 30px;
+  background: #f7f7f7;
+}
+
+.chat-area .chat-box .chat {
+  margin-bottom: 15px;
+}
+
+.chat-area .chat-box .chat.outgoing {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-area .chat-box .chat.outgoing .details {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 70%;
+}
+
+.chat-area .chat-box .chat.incoming {
+  display: flex;
+  align-items: center;
+}
+
+.chat-area .chat-box .chat.incoming img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-area .chat-box .chat.incoming .details {
+  background: #e4e6eb;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 10px 10px 10px 0;
+  max-width: 70%;
+}
+
+.chat-area .typing-area {
+  display: flex;
+  padding: 15px 30px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.chat-area .typing-area input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.chat-area .typing-area button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.chat-area .typing-area button:hover {
+  background: #0056b3;
+}
+
+/* Users Section */
+section.users header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+section.users header .content {
+  display: flex;
+  align-items: center;
+}
+
+section.users header img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+section.users header .details span {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+section.users header .details p {
+  font-size: 14px;
+  color: #999;
+}
+
+section.users header .logout {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+section.users header .logout:hover {
+  text-decoration: underline;
+}
+
+/* Users Section - Search */
+section.users .search {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+section.users .search span {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section.users .search .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+section.users .search input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+section.users .search button {
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  margin-left: 5px; /* Added margin to separate button from input */
+}
+
+section.users .search button:hover {
+  background: #0056b3;
+}
+
+section.users .users-list {
+  max-height: 350px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+section.users .users-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+section.users .users-list a:hover {
+  background: #f1f1f1;
+}
+
+section.users .users-list a .content {
+  display: flex;
+  align-items: center;
+}
+
+section.users .users-list a img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+section.users .users-list a .details span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.users .users-list a .details p {
+  font-size: 14px;
+  color: #999;
+}
+
+section.users .users-list a .status-dot {
+  font-size: 12px;
+}
+
+section.users .users-list a .status-dot i {
+  color: #007bff;
+}
+
+section.users .users-list a .status-dot.offline i {
+  color: #ccc;
+}
+
+/* Error Text */
+.error-text {
+  color: red;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .wrapper {
+      width: 100%;
+      padding: 15px;
+  }
+
+  section.users .users-list {
+      max-height: 300px;
+  }
+
+  .chat-area .chat-box {
+      height: 300px;
+  }
+}
